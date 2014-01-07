@@ -1,0 +1,48 @@
+// footer layout
+
+.footer--main {
+	padding: 1em 0;
+}
+
+//
+// donate footer
+//
+
+.footer--donate {
+	padding: 2em 0;
+
+	p {
+		@extend .text-small;
+	}
+}
+
+// give a little more spacing between columns
+.footer-grid > li{
+	padding-right: 2em;
+}
+
+// darken the underline color
+.footer-grid .list--underline > li{
+	border-color: $fp-grey;
+	margin-bottom: .25em;
+
+	.accordian-title {
+		margin-bottom: .25em;
+		font-weight: bold;
+		font-size: 1em;
+	}
+}
+
+//
+// charity ratings
+//
+
+.ratings {
+	@include clearfix;
+
+	li {
+		max-width: 160px;
+		float: left;
+		margin: 0 10px 10px 0;
+	}
+}

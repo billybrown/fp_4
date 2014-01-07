@@ -1,0 +1,6 @@
+// Stylesheet for older IE
+// these variables below pull in styles that are wrapped up in media queries
+@import 'base';
+$old-ie: true;
+$fix-mqs: $bp-medium;
+@import 'screen';

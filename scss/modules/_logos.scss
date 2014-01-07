@@ -1,0 +1,110 @@
+// logos
+
+.fp-logo {
+	background: transparent url("../img/fp-logo.png") no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+	height: 51px;
+	width: 150px;
+	text-indent: -999em;
+	overflow: hidden;
+
+	&.big {
+		background-image: url("../img/fp-logo_big.png");
+		height: 101px;
+		width: 300px;
+
+		&.white {
+			background-image: url("../img/fp-logo_big_white.png");
+		}
+	}
+
+	&.white {
+		background-image: url("../img/fp-logo_white.png");
+	}
+
+}
+
+.fp-logo--url {
+	background: transparent url("../img/fp-logo_url.png") no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+	height: 57px;
+	width: 150px;
+	text-indent: -999em;
+	overflow: hidden;
+	&.big {
+		background-image: url("../img/fp-logo_url_big.png");
+		height: 113px;
+		width: 300px;
+		&.white {
+			background-image: url("../img/fp-logo_url_big_white.png");
+		}
+	}
+	&.white {
+		background-image: url("../img/fp-logo_url_white.png");
+	}
+}
+
+.fp-logo--actionfund {
+	background: transparent url("../img/fp-logo_actionfund.png") no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+	height: 57px;
+	width: 150px;
+	text-indent: -999em;
+	overflow: hidden;
+	&.big {
+		background-image: url("../img/fp-logo_actionfund_big.png");
+		height: 113px;
+		width: 300px;
+		&.white {
+			background-image: url("../img/fp-logo_actionfund_big_white.png");
+		}
+	}
+	&.white {
+		background-image: url("../img/fp-logo_actionfund_white.png");
+	}
+}
+
+.fp-logo--tagline {
+	background: transparent url("../img/fp-logo_tagline.png") no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+	height: 70px;
+	width: 150px;
+	text-indent: -999em;
+	overflow: hidden;
+	&.big {
+		background-image: url("../img/fp-logo_tagline_big.png");
+		height: 141px;
+		width: 300px;
+		&.white {
+			background-image: url("../img/fp-logo_tagline_big_white.png");
+		}
+	}
+	&.white {
+		background-image: url("../img/fp-logo_tagline_white.png");
+	}
+}
+
+.fp-logo--tagline2 {
+	background: transparent url("../img/fp-logo_tagline2.png") no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+	height: 87px;
+	width: 300px;
+	text-indent: -999em;
+	overflow: hidden;
+	&.big {
+		background-image: url("../img/fp-logo_tagline2_big.png");
+		height: 173px;
+		width: 600px;
+		&.white {
+			background-image: url("../img/fp-logo_tagline2_big_white.png");
+		}
+	}
+	&.white {
+		background-image: url("../img/fp-logo_tagline2_white.png");
+	}
+}

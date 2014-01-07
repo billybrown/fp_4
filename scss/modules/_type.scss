@@ -1,0 +1,191 @@
+body {
+	font-family: $sans;
+	line-height: 1.45em;
+	color: $web-black;
+}
+
+p {
+	margin: 0 0 1em;
+
+	&.heading {
+		margin-bottom: .5em;
+	}
+}
+
+
+//
+// Links
+//
+
+
+a, .link {
+  text-decoration: none;
+  color: $link-color;
+
+	&:hover {
+	  text-decoration: none;
+	  color: $link-hover;
+	}
+}
+
+
+//
+// this is for big tyle
+//
+
+
+.text-big {
+	font-size: 1.25em;
+	line-height: 1.3em;
+}
+
+
+//
+// this is for smaller type
+//
+
+.text-small {
+	font-size: .8em;
+	line-height: 1.5em;
+}
+
+
+//
+// form help text
+//
+
+.text--form-help {
+	@extend .text-small;
+	margin: 0;
+	color: $fp-grey;
+}
+
+
+//
+// Quotes
+//
+
+blockquote {
+	@extend .text-big;
+	border-left: 3px solid #eee;
+	margin-left: 1em;
+	padding-left: 1em;
+
+	p {
+		margin: 0;
+	}
+
+	&.long-quote {
+		font-size: $font-size;
+
+		p {
+			margin: 0 0 1em;
+		}
+	}
+}
+
+.quote-source {
+	font-size: .7em;
+	color: #aaa;
+	&:before {
+		content: '—';
+		padding-right: .25em;
+
+	}
+
+}
+
+//
+// Break
+//
+
+hr {
+	border: none;
+	border-bottom: 1px solid #eee;
+	margin: 1em 0;
+}
+
+//
+// Alignment
+//
+
+.text-left {
+	text-align: left;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+//
+// Alerts
+//
+
+.alert {
+	display: block;
+	padding: 1em;
+	margin: 0 0 1em;
+	border: 2px solid white;
+
+	&.danger {
+		background: lighten($alert-danger, 40%);
+		color: $alert-danger;
+	}
+	
+	&.warning {
+		background: lighten($alert-warning, 50%);
+		color: $alert-warning;
+	}
+	
+	&.info {
+		background: lighten($alert-info, 50%);
+		color: $alert-info;
+	}
+	
+	&.success {
+		background: lighten($alert-success, 50%);
+		color: $alert-success;
+	}
+}
+
+
+//
+// heading styles
+// font sizes and line heights are in normalize
+//
+
+.heading {
+	font-size: 1.75em;
+	line-height: 1.3em;
+	font-family: $display;
+	font-weight: normal;
+
+	&.big {
+		font-size: 3em;
+		line-height: 1.5em;
+	}
+
+	&.small {
+		font-size: 1.1em;
+	}
+
+}
+
+.heading-alt {
+	font-family: $display;
+	font-weight: normal;
+	font-size: 1.25em;
+	background: $fp-grey;
+	padding: .5em;
+}
+
+
+
+
+
+
+

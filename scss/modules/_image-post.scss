@@ -1,0 +1,23 @@
+//
+// A floated image with a caption
+//
+
+.image-post {
+	text-align: center;
+	margin: 0 0 1em;
+
+	@include respond($bp-small) {
+		float: right;
+		max-width: 45%;
+		margin: 0 0 1em 1em;
+		text-align: left;
+	}
+
+	img {
+		margin: 0 0 .25em;
+	}
+	
+	p {
+		@extend .text-small;
+	}
+}

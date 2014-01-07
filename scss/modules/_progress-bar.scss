@@ -1,0 +1,45 @@
+// progress bar
+
+.progress-unit {
+	height: 40px;
+	width: 100%;
+	max-width: 100%;
+	display: block;
+	@include box-sizing(border-box);
+	margin: 0 0 1em;
+	background: $fp-grey;
+	background: rgba(0,0,0,.1);
+	color: lighten($web-black, 10%);
+	@include box-shadow(0 1px 4px rgba(0,0,0,.4) inset);
+	position: relative;
+}
+
+.progress-length {
+	background: $fp-blue4;
+	height: 40px;
+	position: relative;
+
+	&:after {
+	width: 100%;
+	height: 20px;
+	background: rgba(0,0,0,.1);
+	position: absolute;
+	content: "";
+	left: 0;
+	bottom: 0;
+	}
+
+	.donate & {
+		background: $donate-green;
+	}
+}
+
+.progress-text {
+	padding: 8px;
+	color: white;
+	display: block;
+	position: relative;
+	z-index: 10;
+	text-align: left;
+}
+

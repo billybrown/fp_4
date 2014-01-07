@@ -1,0 +1,181 @@
+// form layout
+
+
+//
+// form-section
+//
+
+.form-section {
+	padding: 5%;
+	border-top: 1px solid darken($content-background-color, 10%);
+	background: $content-background-color;
+	@include clearfix;
+	@include respond($bp-medium) {
+		padding: 1.5em;
+	}
+
+	&.border-top {
+		border-top: 5px solid $fp-blue1;
+	}
+
+	&.last {
+		margin-bottom: 5%;
+	}
+}
+
+//
+// form section titles - used on donation pages
+//
+
+.form-section-title {
+	@extend .text-big;
+	display: block;
+	margin: 0 0 1em;
+
+	.form-section--donation-amount & {
+		margin-bottom: 0.25em;
+	}
+}
+
+
+//
+// .form-title on donation pages
+//
+
+.form-title {
+	@extend .heading;
+	background: $fp-blue1;
+	text-align: center;
+	color: white;
+	padding: .25em;
+	margin: 0;
+}
+
+.donation-type-info {
+	margin: 0;
+}
+
+//
+// secure sentence with the lock
+//
+
+.secure-sentence .icon-lock {
+	font-size: 1.25em;
+	padding-right: .25em;
+}
+
+//
+// donation buttons
+//
+
+.donation-buttons {
+	@include clearfix;
+	padding: 0;
+	list-style: none;
+	.form-section--donation-amount & {
+		margin-bottom: 0;
+	}
+
+	label {
+		text-align: center;
+		font-size: 1em;
+		padding: .4em 0;
+		background: $fp-blue4;
+		color: white;
+		display: block;
+		cursor: pointer;
+		
+		&:hover {
+			background: $fp-blue2;
+		}
+	
+		&.selected {
+			background: $donate-green;
+		}
+	}
+
+	input {
+		display: none;
+	}
+
+	&.up2 li{
+		float: left;
+		margin: 0 1% 1% 0;
+		width: 49%;
+	}
+
+	&.up4 li{
+		float: left;
+		margin: 0 1% 1% 0;
+		width: 24%;
+	}
+
+	.no-js & {
+
+		label {
+			text-align: left;
+			background: none;
+			color: $web-black;
+			padding: 0;
+
+			&:hover {
+				background: none;
+			}
+		}
+		input {
+			display: block;
+			float: left;
+		}
+	}
+}
+
+.donation-amount-other {
+	width: 49%;
+}
+
+
+//
+// expiration date
+//
+
+.expiration-date {
+	@include clearfix;
+	padding-left: 2px;
+	select {
+		float: left;
+		width: auto;
+		margin-right: 10px;
+	}
+}
+
+//
+// show and hide sections base on being loged in
+//
+
+// call page
+#call-step--2,
+#call-step--3 {
+
+	.user-unknown & {
+		display: none;
+	}
+
+	.user-known & {
+		display: block;
+	}
+}
+
+//
+// unsubscribe page override to remove margin on WSYWG add of  <p> tag
+//
+.unsubscribe-survey-label {
+	p {
+		@extend label;
+		margin: 0 0 .1;
+	}
+}
+
+
+
+
+

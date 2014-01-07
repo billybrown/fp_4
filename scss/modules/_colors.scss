@@ -1,0 +1,122 @@
+// colors
+
+.fp-white {
+	background: #fff;
+}
+
+.fp-white--type {
+	color: #fff;
+}
+
+.fp-black {
+	background: #000;
+}
+
+.fp-black--type {
+	color: $web-black;
+}
+
+.fp-red {
+	background: $fp-red;
+}
+
+.fp-red--type {
+	color: $fp-red;
+}
+
+.fp-blue {
+	background: $fp-blue;
+}
+
+.fp-blue--type {
+	color: $fp-blue;
+}
+
+.fp-grey {
+	background: $fp-grey;
+}
+
+.fp-grey--type {
+	color: $fp-grey;
+}
+
+// action colors
+
+.donation-green {
+	background: $donate-green;
+}
+
+.donation-green--type {
+	color: $donate-green;
+}
+
+.action-red {
+	background: $action-red;
+}
+
+.action-red--type {
+	color: $action-red;
+}
+
+
+// modern free press blues
+
+.fp-blue1 {
+	background: $fp-blue1;
+}
+
+.fp-blue1--type {
+	color: $fp-blue1;
+}
+
+.fp-blue2 {
+	background: $fp-blue2;
+}
+
+.fp-blue2--type {
+	color: $fp-blue2;
+}
+
+.fp-blue3 {
+	background: $fp-blue3;
+}
+
+.fp-blue3--type {
+	color: $fp-blue3;
+}
+
+.fp-blue4 {
+	background: $fp-blue4;
+}
+
+.fp-blue4--type {
+	color: $fp-blue4;
+}
+
+// gradients
+.gradient--blue {
+	background: $fp-blue1;
+	@include background-image(linear-gradient(top, $fp-blue4, $fp-blue1));
+}
+
+.gradient--grey {
+	background: $fp-grey;
+	@include background-image(linear-gradient(top, white, $fp-grey));
+}
+
+// textures
+
+.texture {
+	background: $fp-blue4 url("../img/texture-blue.png") repeat;
+}
+
+.texture--grey {
+	background: $fp-grey url("../img/texture-bw.png") repeat;
+}
+
+.texture--black {
+	background: $web-black url("../img/texture-black.png") repeat;
+}
+
+
+

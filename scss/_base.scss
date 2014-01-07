@@ -1,0 +1,161 @@
+//+++++++++++++++++++++++++++!!!+++++++++++++++++++++++++++//
+//
+// Welcome to the base partial!
+// Here you can find mixins and variables used throughout
+// the site.
+//
+// Its important that nothing is written to a stylesheet
+// directly from this file. These declarations get used in
+// styles on partials later on.
+//
+//+++++++++++++++++++++++++++!!!+++++++++++++++++++++++++++//
+
+
+
+//+++++++++++++++++++++++++++!!!+++++++++++++++++++++++++++//
+// COMPASS MIXINS (imported from elsewhere)
+// First import mixins from compass. These are mainly
+// tool mixins like clearfixes, and css3 mixins that let
+// you write styles without uses prefixes. Search for these
+// on the compass website to see how they are written.
+// Learn more: http://compass-style.org/
+@import "compass/utilities/general/clearfix";
+@import "compass/css3/box-sizing";
+@import "compass/css3/background-size";
+@import "compass/css3/images";
+@import "compass/css3/transition";
+@import "compass/css3/border-radius";
+@import "compass/css3/opacity";
+@import "compass/css3/text-shadow";
+@import "compass/css3/box-shadow";
+@import "compass/css3/box";
+
+
+//+++++++++++++++++++++++++++!!!+++++++++++++++++++++++++++//
+// COLORS
+// Here are color variables to use throughout the site
+
+$web-black:			#363636;
+$off-white: 		#e8e8e8;
+
+$fp-blue: 			#0e2f73;
+$fp-red: 			#992222;
+$fp-grey: 			#cccccc;
+
+$fp-blue1: 			#007cb4;
+$fp-blue2:			#2490cf;
+$fp-blue3:			#23aee5;
+$fp-blue4:			#52bbef;
+
+$action-red: 		#e52b00;
+$donate-green: 		#72d43d;
+$ctc-color: 		#e36b25;
+
+$link-color:        $fp-blue1;
+$link-hover:        lighten($link-color, 10%);
+
+$sti-orange: 		#ff9900;
+$sti-link-color: 	darken($sti-orange, 3%);
+$sti-link-color-hover: darken($sti-orange, 10%);
+
+$background-color: 	lighten($fp-grey,10%);
+$content-background-color:	#fff;
+
+$menu-donate-color: $action-red;
+$menu-action-color: $fp-blue1;
+$menu-search-color: $fp-blue1;
+$signup-form-color: $fp-blue1;
+
+$color-action: $action-red;
+$color-donate: $donate-green;
+$color-function: $fp-blue1;
+
+$color-facebook: #3b5998;
+$color-twitter: #00acee;
+
+$alert-danger: #a94442;
+$alert-info: #31708f;
+$alert-warning: #8a6d3b;
+$alert-success: #3c763d;
+
+$font-color:		$web-black;
+
+//+++++++++++++++++++++++++++!!!+++++++++++++++++++++++++++//
+// FONTS
+// These are variables for the different fonts used.
+
+$sans: 				'Droid Sans', Tahoma, Geneva, sans-serif;
+$display: 			'Oswald', Impact, Charcoal, sans-serif;
+
+
+//+++++++++++++++++++++++++++!!!+++++++++++++++++++++++++++//
+// MISC
+
+$font-size: 1em;
+$grid-columns: 12;
+$min-width: 360px;
+$max-width-small: 800px;
+$max-width: 1200px;
+$spacing-small: 1em;
+$spacing-large: 2em;
+$nav-off-canvas-width: 		70%;			// for the off canvas nav
+
+//+++++++++++++++++++++++++++!!!+++++++++++++++++++++++++++//
+// BREAKPOINTS (media query stuff)
+// Below are the breakpoints and the mixins to use them
+// inside partials. Be sure to use ems for your breakpoints
+// to account for users zooming. Just divide pixels by 16.
+// EXAMPLE USECASE
+//  .random-class {
+//     font-size: 1em;
+//     @include break-medium {
+//		  font-size: 2em;	
+//	   }
+//  }
+
+
+$bp-small:          30em;
+$bp-medium:         54em;
+$bp-large:          87.5em;
+
+// Media query and IE support stuff
+// more info about this method here: http://jakearchibald.github.io/sass-ie/
+///==================================================================================
+$fix-mqs: false !default;
+
+@mixin respond($width) {
+	// If were outputting for a fixed media query set...
+  @if $fix-mqs {
+    // ...and if we should apply these rules...
+    @if $fix-mqs >= $width {
+      // ...output the content the user gave us.
+      @content;
+  	}
+  }
+  @else {
+    // Otherwise, output it using a regular media query
+    @media screen and (min-width: $width) {
+      @content;
+  	}
+  }
+}
+
+
+// I also have a respond-max mixin, that does what you might expect
+$old-ie: false !default;
+@mixin old-ie {
+  // Only use this content if we're dealing with old IE
+  @if $old-ie {
+    @content;
+  }
+}
+
+// media query for retina screens.
+@mixin retina {
+	@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+	       only screen and (min--moz-device-pixel-ratio: 1.5),
+	       only screen and (min-device-pixel-ratio: 1.5) {
+		@content;
+	}
+}
+

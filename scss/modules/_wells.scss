@@ -1,0 +1,8 @@
+// wells
+
+.well {
+	@include box-shadow(0 0 6px rgba(0,0,0,.4) inset);
+	background: $fp-grey;
+	background: rgba(0,0,0,.1);
+	margin-bottom: 1em;
+}

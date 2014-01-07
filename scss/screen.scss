@@ -1,0 +1,107 @@
+//+++++++++++++++++++++++++++!!!+++++++++++++++++++++++++++//
+// Welcome to the Free Press SCSS file structure.
+//
+// These styles use SCSS as a CSS preprocessor
+// Learn more: http://sass-lang.com/
+//
+// They also use compass as a CSS framework on top of the
+// SCSS. Learn more: http://compass-style.org/
+//
+// WORKFLOW
+// Once you install the SASS and Compass gems. Open the terminal 
+// at the theme root (fpstrucutre) and run 'compass watch'
+// Everytime you save a SCSS file compass will automatically
+// compile all change files into their appropriate CSS files.
+// Now refresh your local environment and you changes should be
+// active. Don't forget about clearing the cache!
+//
+// This file is full of imports of SCSS partials that contain
+// the actual style declarations. This file doubles as a table
+// of contents for you to quickly see and understand how
+// the css works together. OK! Lets get on with it!
+//
+//+++++++++++++++++++++++++++!!!+++++++++++++++++++++++++++//
+
+//+++++++++++++++++++++++++++!!!+++++++++++++++++++++++++++//
+// THE BASE (sometimes called mixins)
+// First is the base partial. This partial contains variables
+// and mixins that are used throughout the site. These include
+// colors, font faces, media query break points, and more.
+@import '_base';
+
+//+++++++++++++++++++++++++++!!!+++++++++++++++++++++++++++//
+// NORMALIZE (a css reset alternative)
+// Next, Normalize your styles. Normalize is an alternative
+// to a CSS reset that makes browsers render all elements the same.
+// Learn more: http://necolas.github.io/normalize.css/
+@import '_normalize';
+
+//+++++++++++++++++++++++++++!!!+++++++++++++++++++++++++++//
+// CSS TOOLS (or helpers)
+// Third is the tools partial. This partial contains some
+// helper classes like clearfixes, image replacement, fluid
+// images/media, etc. 
+@import '_tools';
+
+
+//+++++++++++++++++++++++++++!!!+++++++++++++++++++++++++++//
+// ICONS
+// I use a free service called icomoon to generate icon fonts
+// They get imported here and you can use them wherever
+@import '_icon-fonts';
+
+//+++++++++++++++++++++++++++!!!+++++++++++++++++++++++++++//
+// Modules
+// Modular styles broken out into individual files
+@import 'modules/_logos';
+@import 'modules/_colors';
+@import 'modules/_type';
+@import 'modules/_buttons';
+@import 'modules/_spacing';
+@import 'modules/_lists';
+@import 'modules/_grids';
+@import 'modules/_tables';
+@import 'modules/_inputs';
+@import 'modules/_section';
+@import 'modules/_hero';
+@import 'modules/_pagination';
+@import 'modules/_navicon';
+@import 'modules/_accordian';
+@import 'modules/_modals';
+@import 'modules/_tabs';
+@import 'modules/_progress-bar';
+@import 'modules/_wells';
+@import 'modules/_image-post';
+@import 'modules/_image-top';
+
+//+++++++++++++++++++++++++++!!!+++++++++++++++++++++++++++//
+// Layouts
+// Layouts of the page
+@import 'layouts/_wrappers';
+@import 'layouts/_header';
+@import 'layouts/_form';
+@import 'layouts/_footer';
+
+
+//+++++++++++++++++++++++++++!!!+++++++++++++++++++++++++++//
+// SPECIFIC PARTIALS
+// These partials are specific to certain page. Not written
+// to be reusable elsewhere
+
+
+//+++++++++++++++++++++++++++!!!+++++++++++++++++++++++++++//
+// Shame
+// If your too busy to figure all of this out, just put your styles here.
+// But please figure it out. Its worth it in the long run. 
+@import '_shame';
+
+//+++++++++++++++++++++++++++!!!+++++++++++++++++++++++++++//
+// PRINT STYLES
+// The styles are wrapped in the 'print' media query so that
+// they only get activated when a user tries to print the
+// page.
+@media print {
+	@import '_print';
+}
+
+

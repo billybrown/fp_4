@@ -1,0 +1,85 @@
+// three items all at equal width
+
+
+.grid {
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	@include respond($bp-medium) {
+		@include clearfix;
+		margin: 0 0 1em;
+	}
+	& > li {
+		display: block;
+		margin: 0 0 1em;
+		@include respond($bp-medium) {
+			padding-right: 1em;
+			margin: 0;
+			@include box-sizing(border-box);
+			float: left;
+
+			&.last-item {
+				padding-right: 0;
+			}
+	
+			& > img {
+				width: 100%;
+			}
+		}
+	}
+
+	.no-boxsizing & li {
+		@include respond($bp-medium) {
+			padding-right: 0;
+		}
+	}
+
+	& > li > a {
+		display: block;
+	}
+}
+
+@include respond($bp-medium) {
+	.grid--2 > li {
+		width: 50%;
+	}
+	
+	.grid--3 > li {
+		width: 33.3333%;
+	}
+	
+	.grid--4 > li {
+		width: 25%;
+	}
+	
+	.grid--5 > li {
+		width: 20%;
+	}
+	
+	.grid--6 > li {
+		width: 16.66666%;
+	}
+}
+
+
+// 
+// grids inline (used a lot on forms)
+//
+
+.inline-grid {
+	@include box-sizing(border-box);
+	float: left;
+	padding-right: 10px;
+
+	&.quarter {
+		width: 25%
+	}
+
+	&.half {
+		width: 50%;
+	}	
+
+	&.end {
+		padding-right: 0;
+	}
+}

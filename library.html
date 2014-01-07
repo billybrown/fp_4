@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Free Press Actionkit Pattern Library</title>
+        <meta name="description" content="Web design guidelines and examples for the Free Press Actionkit templates.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Oswald:400,700,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/prism.css">
+        <link rel="stylesheet" href="css/screen.css">
+        <link rel="stylesheet" href="css/library.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+<div class="directory">
+	<div class="directory-header">
+		<div class="fp-blue3 pad--1"><div class="fp-logo white"></div></div>
+		<ul class="directory-contents">
+			<li><a href="#logos">Logos</a></li>
+			<li><a href="#colors">Colors</a></li>
+			<li><a href="#icons">Icons</a></li>
+			<li><a href="#typography">Typography</a></li>
+			<li><a href="#buttons">Buttons</a></li>
+			<li><a href="#forms">Forms</a></li>
+			<li><a href="#spacing">Spacing</a></li>
+			<li><a href="#lists">Lists</a></li>
+			<li><a href="#grids">Grids</a></li>
+			<li><a href="#interactive">Interactive</a></li>
+			<li><a href="#patterns">Patterns</a></li>
+			<li><a href="#misc">Misc.</a></li>
+		</ul>
+	</div>
+
+<ul class="directory-elements language-markup">
+
+<li class="directory-element intro">
+	<h1>Free Press Actionkit Pattern Library</h1>
+	<p>This is the library of html, css and js patterns for the 'fp_4' Free Press Actionikit template sets. Actionkit templates are written in HTML with a spattering of Django. If you're looking to do something more complicated then the patterns here - I'd recommend <a href="https://www.djangoproject.com/">learning Django</a> and reading the Actionkit User Guide.</p>
+	<hr>
+	<h2>Ideals</h2>
+	<ol>
+		<li><strong>Modular</strong> - All of these elements are meant to be combined and repeated to create the final design.</li>
+		<li><strong>Responsive</strong> - Everything should look good no matter what the screen size.</li>
+		<li><strong>Future Friendly</strong> - Everything is designed to be added to and modified.</li>
+	</ol>
+	<hr>
+	<h2>Rules</h2>
+	<ol>
+		<li><strong>Only Classes Add Styles</strong> - Styles will only be applied through classes, not IDs and not elements (with a few exceptions).</li>
+		<li><strong>Update This Guide</strong> - This style guide is meant to be updated. When you need to add new CSS, please add it to the SASS in the appriopriate partial. If you are in a rush or don't know where to put it, add it to _shame.scss and then properly incorporate it later.</li>
+	</ol>
+</li>
+
+
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++!!!++++++++++++++++++++++++++++++++++++++++++++++++++++++//-->
+<!-- Logos -->
+<h2 id="logos" class="directory-section-title">Logos</h2>
+
+
+
+<li class="directory-element">
+<div class="directory-example">
+<span class="fp-logo"></span>
+</div>
+<div class="directory-code"></div>
+</li>
+
+<li class="directory-element">
+<div class="directory-example">
+<span class="fp-logo big"></span>
+</div>
+<div class="directory-code"></div>
+
+</li>
+
+<li class="directory-element">
+<div class="directory-example">
+<div class="fp-blue3 pad--1">
+	<span class="fp-logo big white"></span>
+	<span class="fp-logo white"></span>
+</div>
+</div>
+<div class="directory-code"></div>
+
+</li>
+
+<li class="directory-element">
+<div class="directory-example">
+	<span class="fp-logo--url"></span>
+</div>
+<div class="directory-code"></div>
+
+</li>
+
+<li class="directory-element">
+<div class="directory-example">
+	<span class="fp-logo--actionfund"></span>
+</div>
+<div class="directory-code"></div>
+
+</li>
+
+<li class="directory-element">
+<div class="directory-example">
+	<span class="fp-logo--tagline"></span>
+</div>
+<div class="directory-code"></div>
+
+</li>
+
+<li class="directory-element">
+<div class="directory-example">
+	<span class="fp-logo--tagline2"></span>
+</div>
+<div class="directory-code"></div>
+
+</li>
+
+
+
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++!!!++++++++++++++++++++++++++++++++++++++++++++++++++++++//-->
+<!-- Colors -->
+<h2 id="colors" class="directory-section-title">Colors</h2>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<p class="fp-red--type">Free Press red</p>
+<p class="fp-blue--type">Free Press blue</p>
+<p class="fp-grey--type">Free Press grey</p>
+<div class="colorbox fp-red"></div>
+<div class="colorbox fp-blue"></div>
+<div class="colorbox fp-grey"></div>
+</div>
+<div class="directory-code"></div>
+</li>
+
+<li class="directory-element">
+<div class="directory-example">
+<p class="fp-blue1--type">Free Press Blue 1</p>
+<p class="fp-blue2--type">Free Press Blue 2</p>
+<p class="fp-blue3--type">Free Press Blue 3</p>
+<p class="fp-blue4--type">Free Press Blue 4</p>
+<div class="colorbox fp-blue1"></div>
+<div class="colorbox fp-blue2"></div>
+<div class="colorbox fp-blue3"></div>
+<div class="colorbox fp-blue4"></div>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<p class="donation-green--type">Donation Green</p>
+<p class="action-red--type">Action Red</p>
+<p class="fp-white--type">White</p>
+<p class="fp-black--type">Black</p>
+<div class="colorbox donation-green"></div>
+<div class="colorbox action-red"></div>
+<div class="colorbox fp-white"></div>
+<div class="colorbox fp-black"></div>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<div class="colorbox gradient--blue"></div>
+<div class="colorbox gradient--grey"></div>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<div class="pad--4 texture--grey"></div>
+<div class="pad--4 texture"></div>
+<div class="pad--4 texture--black"></div>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++!!!++++++++++++++++++++++++++++++++++++++++++++++++++++++//-->
+<!-- Icons -->
+<h2 id="icons" class="directory-section-title">Icons</h2>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<span class="icon-lock"></span>
+<span class="icon-facebook"></span>
+<span class="icon-google-plus"></span>
+<span class="icon-twitter"></span>
+<span class="icon-tumblr"></span>
+<span class="icon-link"></span>
+<span class="icon-gift"></span>
+<span class="icon-heart"></span>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++!!!++++++++++++++++++++++++++++++++++++++++++++++++++++++//-->
+<!-- Typography -->
+<h2 id="typography" class="directory-section-title">Typography</h2>
+
+<li class="directory-element">
+<div class="directory-example">
+<p>This is a paragraph.</p>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+
+<li class="directory-element">
+<div class="directory-example">
+<p>This is a <a href="">link</a> inside of a paragraph.</p>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<p>This is a <strong>bold something</strong> inside of a paragraph.</p>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<p>This is an <em>italic something</em> inside of a paragraph.</p>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<p class="text-big">This is a paragraph with big font.</p>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<p class="text-small">This is some fineprint.</p>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<p class="heading">A Regular Title</p>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<p class="heading big">A Big Title</p>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<p class="heading small">A Small Title</p>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<label>This is a Label</label>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<blockquote><p>"This is a quote."</p></blockquote>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<blockquote>
+	<p>"This is a quote with a source."</p>
+	<p class="quote-source">Billie</p>
+</blockquote>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++!!!++++++++++++++++++++++++++++++++++++++++++++++++++++++//-->
+<!-- Buttons -->
+<h2 id="buttons" class="directory-section-title">Buttons</h2>
+
+
+
+<li class="directory-element">
+<div class="directory-example">
+<a href="http://freepress.net" class="button">Regular Button</a>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<a href="http://freepress.net" class="button big">Big Button</a>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<a href="http://freepress.net" class="button small">Small Button</a>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<a href="http://freepress.net" class="button full">Full Width Button</a>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<div class="button--list">
+	<a class="button action" href="">Take Action!</a>
+	<a class="button donate" href="">Donate!</a>
+	<a class="button function" href="">Share!</a>
+</div>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++!!!++++++++++++++++++++++++++++++++++++++++++++++++++++++//-->
+<!-- Forms -->
+<h2 id="forms" class="directory-section-title">Forms</h2>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<input type="text" id="name" placeholder="Text Input Field"/>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<textarea placeholder="This is a Textarea" id="name"></textarea>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<select id="name">
+	<option>Select Option 1</option>
+	<option>Select Option 2</option>
+	<option>Select Option 3</option>
+</select>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<ul class="radio-group">
+	<li><label><input type="radio" name="notifications" /> Radio Button Option 1</label></li>
+	<li><label><input type="radio" name="notifications" /> Radio Button Option 2</label></li>
+	<li><label><input type="radio" name="notifications" /> Radio Button Option 3</label></li>
+</ul>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<label><input type="checkbox" /> This is a checkbox</label>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+
+
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++!!!++++++++++++++++++++++++++++++++++++++++++++++++++++++//-->
+<!-- Spacing -->
+<h2 id="spacing" class="directory-section-title">Spacing</h2>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<div class="fp-blue3 fp-white--type">There is no padding here.</div>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<div class="fp-blue3 fp-white--type pad--1">The padding class ads a little bit of space inside an element.</div>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<div class="fp-blue3 fp-white--type pad--2">Even more padding.</div>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<div class="fp-blue3 fp-white--type pad--4">Padding to the max.</div>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<div class="fp-blue3 fp-white--type pad--1 margin--1">A little bit of margin added to the bottom of an element.</div>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<div class="fp-blue3 fp-white--type pad--1 margin--2">Even more margin.</div>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<div class="fp-blue3 fp-white--type pad--1 margin--4">Margin to the max.</div>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++!!!++++++++++++++++++++++++++++++++++++++++++++++++++++++//-->
+<!-- Lists -->
+<h2 id="lists" class="directory-section-title">Lists</h2>
+
+
+
+<li class="directory-element">
+<div class="directory-example">
+<ul>
+	<li>List item 1</li>
+	<li>List item 2</li>
+	<li>List item 3</li>
+</ul>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<ol>
+	<li>Numbered List item 1</li>
+	<li>Numbered List item 2</li>
+	<li>Numbered List item 3</li>
+</ol>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<ul class="no-list">
+	<li>Unstyled List item 1</li>
+	<li>Unstyled List item 2</li>
+	<li>Unstyled List item 3</li>
+</ul>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+
+<li class="directory-element">
+<div class="directory-example">
+<ul class="list--underline">
+	<li><p>List item 1</p></li>
+	<li><p>List item 2</p></li>
+	<li><p>List item 3</p></li>
+</ul>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<ul class="list--inline">
+	<li>List Item 1</li>
+	<li>List Item 2</li>
+	<li>List Item 3</li>
+</ul>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<ul class="list--image-left">
+	<li>
+		<img src="http://b.illbrown.com/freelance/bill1.jpg" alt="bill"/>
+		<p>List item 1</p>
+	</li>
+	<li>
+		<img src="http://b.illbrown.com/freelance/bill2.jpg" alt="bill"/>
+		<p>List item 2</p>
+	</li>
+	<li>
+		<img src="http://b.illbrown.com/freelance/bill3.jpg" alt="bill"/>
+		<p>List item 3</p>
+	</li>
+</ul>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<ul class="list--thumbnails">
+	<li><img src="http://b.illbrown.com/freelance/bill1.jpg" alt="bill"/></li>
+	<li><img src="http://b.illbrown.com/freelance/bill2.jpg" alt="bill"/></li>
+	<li><img src="http://b.illbrown.com/freelance/bill3.jpg" alt="bill"/></li>
+	<li><img src="http://b.illbrown.com/freelance/bill4.jpg" alt="bill"/></li>
+	<li><img src="http://b.illbrown.com/freelance/bill7.jpg" alt="bill"/></li>
+</ul>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+
+
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++!!!++++++++++++++++++++++++++++++++++++++++++++++++++++++//-->
+<!-- Grids -->
+<h2 id="grids" class="directory-section-title">Grids</h2>
+
+
+
+
+<li class="directory-element">
+<div class="directory-example">
+<ul class="grid grid--2">
+	<li><img src="http://b.illbrown.com/freelance/bill2.jpg" alt="bill"/></li>
+	<li class="last-item"><img src="http://b.illbrown.com/freelance/bill3.jpg" alt="bill"/></li>
+</ul>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+
+<li class="directory-element">
+<div class="directory-example">
+<ul class="grid grid--3">
+	<li><img src="http://b.illbrown.com/freelance/bill2.jpg" alt="bill"/></li>
+	<li><img src="http://b.illbrown.com/freelance/bill3.jpg" alt="bill"/></li>
+	<li class="last-item"><img src="http://b.illbrown.com/freelance/bill4.jpg" alt="bill"/></li>
+</ul>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<ul class="grid grid--4">
+	<li><img src="http://b.illbrown.com/freelance/bill2.jpg" alt="bill"/></li>
+	<li><img src="http://b.illbrown.com/freelance/bill3.jpg" alt="bill"/></li>
+	<li><img src="http://b.illbrown.com/freelance/bill4.jpg" alt="bill"/></li>
+	<li class="last-item"><img src="http://b.illbrown.com/freelance/bill5.jpg" alt="bill"/></li>
+</ul>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<ul class="grid grid--5">
+	<li><img src="http://b.illbrown.com/freelance/bill2.jpg" alt="bill"/></li>
+	<li><img src="http://b.illbrown.com/freelance/bill3.jpg" alt="bill"/></li>
+	<li><img src="http://b.illbrown.com/freelance/bill4.jpg" alt="bill"/></li>
+	<li><img src="http://b.illbrown.com/freelance/bill5.jpg" alt="bill"/></li>
+	<li class="last-item"><img src="http://b.illbrown.com/freelance/bill6.jpg" alt="bill"/></li>
+</ul>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<ul class="grid grid--6">
+	<li><img src="http://b.illbrown.com/freelance/bill2.jpg" alt="bill"/></li>
+	<li><img src="http://b.illbrown.com/freelance/bill3.jpg" alt="bill"/></li>
+	<li><img src="http://b.illbrown.com/freelance/bill4.jpg" alt="bill"/></li>
+	<li><img src="http://b.illbrown.com/freelance/bill5.jpg" alt="bill"/></li>
+	<li><img src="http://b.illbrown.com/freelance/bill6.jpg" alt="bill"/></li>
+	<li class="last-item"><img src="http://b.illbrown.com/freelance/bill7.jpg" alt="bill"/></li>
+</ul>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++!!!++++++++++++++++++++++++++++++++++++++++++++++++++++++//-->
+<!-- Interactive -->
+<h2 id="interactive" class="directory-section-title">Interactive</h2>
+
+
+
+<li class="directory-element">
+<div class="directory-example">
+<div class="accordian">
+	<h3 class="accordian-title">Accordian Title 1</h3>
+	<div class="accordian-content">
+		<p>Some hot info.</p>
+	</div>
+	<h3 class="accordian-title">Accordian Title 2</h3>
+	<div class="accordian-content">
+		<p>Some more hot info.</p>
+	</div>
+	<h3 class="accordian-title">Accordian Title 3</h3>
+	<div class="accordian-content">
+		<p>Even more hot info.</p>
+	</div>
+</div>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<div class="tabs">
+	<!-- Nav tabs -->
+	<ul class="tabs--nav">
+	  <li id="tab1-nav" class="active">tab 1</li>
+	  <li id="tab2-nav" >tab 2</li>
+	  <li id="tab3-nav" >tab 3</li>
+	  <li id="tab4-nav" >tab 4</li>
+	</ul>
+	<!-- Tab panes -->
+	<div class="tabs--content">
+	  <div class="tabs--pane active" id="tab1-pane">Stuff inside tab 1.</div>
+	  <div class="tabs--pane" id="tab2-pane">Stuff inside tab 2.</div>
+	  <div class="tabs--pane" id="tab3-pane">Stuff inside tab 3.</div>
+	  <div class="tabs--pane" id="tab4-pane">Stuff inside tab 4.</div>
+	</div>
+</div>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++!!!++++++++++++++++++++++++++++++++++++++++++++++++++++++//-->
+<!-- Common Objects -->
+<h2 id="patterns" class="directory-section-title">Patterns</h2>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<div class="hero">
+  <h2 class="hero-title">Hero Box!</h2>
+  <p>A common layout pattern for when you really want to get your message across.</p>
+  <p><a class="button action">Learn more</a></p>
+</div>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<div class="section">
+	<p class="section-title">Section Title</p>
+	<div class="section-content">
+		<p>Stuff inside of a section.</p>
+	</div>
+</div>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<article>
+	<div class="image-post">
+		<img src="http://b.illbrown.com/freelance/bill2.jpg" alt="bill"/>
+		<p>This is a caption.</p>
+	</div>
+	<p>Sometimes you want to include an image inside of a blog post or another peice of content. If you want that image to show up in the top right with the text flowing around it, do something like this example.</p>
+</article>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<div class="fp-grey pad--1">
+	<div class="image-top">
+		<img src="http://b.illbrown.com/freelance/bill2.jpg" alt="bill"/>
+	</div>
+	<article class="fp-white pad--1">
+		<h2 class="heading">Top Image</h2>
+		<p>Sometimes you want an image at the top of an article. If the image is small, it gets centered and a black background is applied.</p>
+	</article>
+</div>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++!!!++++++++++++++++++++++++++++++++++++++++++++++++++++++//-->
+<!-- Misc. -->
+<h2 id="misc" class="directory-section-title">Misc.</h2>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<div class="progress-unit">
+	<div class="progress-length" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+	  <span class="progress-text">60% Complete</span>
+	</div>
+</div>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+
+<li class="directory-element">
+<div class="directory-example">
+<div class="progress-unit donate">
+	<div class="progress-length" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+	  <span class="progress-text">60% Complete</span>
+	</div>
+</div>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<div class="pad--2 well">This is a well</div>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+
+<li class="directory-element">
+<div class="directory-example">
+<hr>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+
+<li class="directory-element">
+<div class="directory-example">
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>ID</th>
+      <th>Favorite Color</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bill</td>
+      <td>00001</td>
+      <td>Blue</td>
+    </tr>
+    <tr>
+      <td>William</td>
+      <td>00002</td>
+      <td>Red</td>
+    </tr>
+    <tr>
+      <td>Billie</td>
+      <td>00003</td>
+      <td>Green</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<div class="directory-code"></div>
+</li>
+
+<li class="directory-element">
+<div class="directory-example">
+<p class="alert danger"><strong>Danger!</strong> This is an alert.</p>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<p class="alert warning"><strong>Warning!</strong> This is an alert.</p>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<p class="alert info"><strong>Information!</strong> This is an alert.</p>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<p class="alert success"><strong>Success!</strong> This is an alert.</p>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<p class="text-left">This paragraph is left aligned.</p>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<p class="text-center">This paragraph is centered.</p>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+<li class="directory-element">
+<div class="directory-example">
+<p class="text-right">This paragraph is right aligned.</p>
+</div>
+<div class="directory-code"></div>
+</li>
+
+<li class="directory-element">
+<div class="directory-example">
+<div class="float-left">I'm floated to the left</div>
+<div class="float-right">I'm floated to the right</div>
+</div>
+<div class="directory-code"></div>
+</li>
+
+<li class="directory-element">
+<div class="directory-example">
+<div class="clearfix">
+	<div class="float-left">I'm floated to the left</div>
+	<div class="float-right">I'm floated to the right</div>
+</div>
+<p>I'm showing up below the floats, because they are wrapped in a clearfix element.</p>
+</div>
+<div class="directory-code"></div>
+</li>
+
+<li class="directory-element">
+<div class="directory-example">
+<p> All of these names will stay on the same line: <span class="nobr">Bill "Billy-Boy" Billions</span>, <span class="nobr">Billie "Bam-Bam" Billington</span> and <span class="nobr">William Willy Willows</span>.</p>
+</div>
+<div class="directory-code"></div>
+</li>
+
+
+
+	</ul>
+</div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/accordian.js"></script>
+        <script src="js/tabs.js"></script>
+        <script src="js/library.js"></script>
+        <script src="js/vendor/prism.js"></script>
+
+    </body>
+</html>
+
+

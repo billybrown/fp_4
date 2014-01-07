@@ -1,0 +1,63 @@
+// major wrapper styles
+
+body {
+  min-width: $min-width;
+  background: $background-color;
+}
+
+.constrained {
+	margin: 0 auto 1em;
+	padding: 0 5%;
+	max-width: $max-width;
+
+	&.single-column {
+		max-width: 600px;
+		margin: 0 auto 5%;
+	}
+}
+
+#main {
+	margin-bottom: 2em;
+}
+
+.content--main {
+	padding: 0 5%;
+}
+
+.content--ask-text,
+.content-box {
+	padding: 5%;
+	background: $content-background-color;
+	@include respond($bp-medium) {
+		padding: 1.5em;
+	}
+}
+
+.content--ask-text {
+	margin-bottom: 5%;
+}
+
+.column {
+	margin: 0 0 5%;
+}
+
+// put in the main grid when the screen is big enough for it
+
+@include respond($bp-medium) {
+	.column {
+		float: right;
+	}
+
+	.column--1 {
+		width: 42.5%;
+		margin-left: 2.5%;
+	}
+	.column--2 {
+		width: 55%;
+	}
+
+	.content--main {
+		@include clearfix;
+	}
+}
+
