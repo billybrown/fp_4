@@ -1,0 +1,13 @@
+# server settings
+scheme: s3
+access_key_id: 0VW8N91M0ZAWSP82R0R2
+secret_access_key: 2ZVIqB0DhCvt9DgHDwtm5iA15ZOLHNPlhPZZma1h
+bucket_name: s3.freepress.net
+
+# remote path
+path: template-set-assets/fp_4
+
+# these files (from Git) will not be uploaded during a deploy
+exclude:
+  - dandelion.yml
+  - .sass-cache
