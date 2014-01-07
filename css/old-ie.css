@@ -754,6 +754,11 @@ textarea {
   content: "\e607";
 }
 
+/* line 53, ../scss/_icon-fonts.scss */
+.test {
+  background: blue;
+}
+
 /* line 3, ../scss/modules/_logos.scss */
 .fp-logo {
   background: transparent url("../img/fp-logo.png") no-repeat;
